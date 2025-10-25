@@ -5,10 +5,21 @@
     <title>403 Forbidden</title>
     <link href="https://fonts.bunny.net/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <style>
       :root {
         --accent: #3b82f6;
         --accent-hover: #2563eb;
+      }
+
+      body {
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      body {
+        -webkit-touch-callout: none;
       }
 
       html,
@@ -38,11 +49,11 @@
         font-weight: 700;
         margin: 0;
         position: relative;
-        color: #f8fafc;
-        transition: transform 0.4s ease, text-shadow 0.4s ease;
         cursor: default;
+        transition: transform 0.4s ease, text-shadow 0.4s ease;
         background: linear-gradient(90deg, #f8fafc, var(--accent), #f8fafc);
         background-size: 200% auto;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: shine 3s linear infinite;
@@ -57,7 +68,7 @@
         cursor: default;
       }
 
-      /* Professional hover effect */
+
       h1:hover {
         transform: scale(1.08) translateY(-4px);
         letter-spacing: 6px;
@@ -124,7 +135,6 @@
         transform: scale(1.1);
       }
 
-      /* 🌙 Dark mode */
       @media (prefers-color-scheme: dark) {
         body {
           background: linear-gradient(135deg, #1e293b, #0f172a);
@@ -146,7 +156,6 @@
         }
       }
 
-      /* ☀️ Light mode */
       @media (prefers-color-scheme: light) {
         body {
           /* Subtle gradient instead of flat gray */
