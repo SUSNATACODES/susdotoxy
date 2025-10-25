@@ -1,0 +1,80 @@
+/* === UNIVERSAL HEADER === */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #f4a300;
+}
+
+.logo h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #111;
+}
+
+/* NAVIGATION */
+nav.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav.top-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.25s ease;
+}
+
+nav.top-nav a:hover {
+  color: #f4a300;
+}
+
+nav.top-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #f4a300;
+  transition: width 0.25s ease;
+}
+
+nav.top-nav a:hover::after,
+nav.top-nav a.active::after {
+  width: 100%;
+}
+
+/* Prevent layout jump */
+body {
+  margin: 0;
+  padding: 0;
+}

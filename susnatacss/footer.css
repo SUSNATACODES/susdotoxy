@@ -1,0 +1,82 @@
+/* === FOOTER === */
+footer {
+  margin-top: 80px;
+  background: #fff;
+  padding: 40px 10% 30px;
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN FOOTER LAYOUT */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* HEADINGS */
+.footer-content h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #f4a300;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* LINKS & TEXT */
+.footer-content a {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.25s ease;
+}
+
+.footer-content a:hover {
+  color: #f4a300;
+}
+
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  opacity: 0.85;
+  transition: all 0.25s ease;
+}
+
+.social img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* COPYRIGHT TEXT */
+.copy {
+  text-align: center;
+  color: #888;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}
